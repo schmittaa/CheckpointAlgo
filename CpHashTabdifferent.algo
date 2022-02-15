@@ -20,16 +20,17 @@ BEGIN
 
     END_FOR
 
-    IF (tab1.length<tab2.length) THEN
-        longueur := tab2.length
-    ELSE
-        longueur := tab1.length
-    END_IF
-
-    FOR i FROM 0 TO longueur  DO
+    FOR i FROM 0 TO tab1.length  DO
         IF (hash.get(tab1[i]=1)) THEN
         somme:= somme + tab1[i];
         END_IF
     END_FOR
+
+    FOR j FROM 0 TO tab2.length  DO
+        IF (hash.get(tab2[j]=1)) THEN
+        somme:= somme + tab2[j];
+        END_IF
+    END_FOR
+
 
 END
