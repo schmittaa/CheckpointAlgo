@@ -20,13 +20,13 @@ BEGIN
 
     END_FOR
 
-    FOR i FROM 0 TO tab1.length  DO
+    FOR i FROM 0 TO tab1.length -1 DO
         IF (hash.get(tab1[i]=1)) THEN
         somme:= somme + tab1[i];
         END_IF
     END_FOR
 
-    FOR j FROM 0 TO tab2.length  DO
+    FOR j FROM 0 TO tab2.length -1  DO
         IF (hash.get(tab2[j]=1)) THEN
         somme:= somme + tab2[j];
         END_IF
